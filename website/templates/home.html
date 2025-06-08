@@ -7,23 +7,24 @@
     <br>
     <form method="POST" action="{% url 'home' %}">
     {% csrf_token %}
+    <form>
     <div class="mb-3">
-        <input type="text" class="form-control" placeholder="username" name="username" required>
+    
+        <input type="text" class="form-control" name ="username" required>
+    
     </div>
     <div class="mb-3">
-        <input type="password" class="form-control" placeholder="password" name="password" required>
+    
+        <input type="password" class="form-control" name = "password" required>
     </div>
-    <br>
-    <button type="submit" class="btn btn-secondary">Login</button>
-</form>
-
-        
+  
+    <button type="submit" class="btn btn-primary">Login</button>
+    </form>
     
 
-
+    </form>
 
 </div>
-
 
 
 {% endblock%}
